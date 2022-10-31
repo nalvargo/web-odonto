@@ -193,7 +193,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw;
+            width: 200vw;
             height: var(--background-height);
             z-index: 0;
             pointer-events: none;
@@ -218,7 +218,7 @@
             z-index: 1;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 1.25s ease-in-out 0.75s, visibility 1.25s 0.75s;
+            transition: opacity 0.25s ease-in-out 0.75s, visibility 0.25s 0.75s;
             transform: scale(1);
         }
 
@@ -312,7 +312,7 @@
             border-radius: inherit;
             padding: 3.75rem 3rem;
             max-width: 100%;
-            width: 38rem;
+            width: 52rem;
         }
 
         #main>.inner>header {
@@ -401,11 +401,11 @@
 
         body.is-loading #main {
             opacity: 0;
-            transform: translateY(1.6875rem);
+            transform: translateY(2rem);
         }
 
         #main>.inner>section>* {
-            transition: opacity 1s ease-in-out 0.25s;
+            transition: opacity 0.50s ease-in-out 0.50s;
         }
 
         body.is-loading #main>.inner>section>* {
@@ -414,7 +414,7 @@
 
         #main>.inner>header,
         #main>.inner>footer {
-            transition: opacity 0.25s ease-in-out 0.375s, visibility 0.25s linear 0.375s;
+            transition: opacity 0.25s ease-in-out 0.375s, visibility 0.25s linear 0.25s;
         }
 
         #main>.inner>header.hidden,
@@ -425,11 +425,11 @@
         }
 
         #main>.inner>section {
-            transition: opacity 0.5s ease-in-out 0.25s, min-height 0.25s ease-in-out, max-height 0.25s ease-in-out;
+            transition: opacity 0.2s ease-in-out 0.25s, min-height 0.25s ease-in-out, max-height 0.25s ease-in-out;
         }
 
         #main>.inner>section.inactive {
-            transition: opacity 0.25s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
             opacity: 0;
         }
 
@@ -465,7 +465,7 @@
             margin: -2rem 0 0 -2rem;
             animation: loading-spinner 1s infinite linear;
             transition: opacity 0.25s ease;
-            transition-delay: 0.5s;
+            transition-delay: 0.2s;
             opacity: 0;
             z-index: -1;
             background-position: center;
@@ -474,7 +474,7 @@
         }
 
         .deferred.loading:before {
-            opacity: 0.35;
+            opacity: 0.2;
             z-index: 0;
         }
 
@@ -1173,6 +1173,7 @@
             width: 15rem;
             border-radius: 0.375rem;
         }
+
 
         hr {
             width: 100%;
@@ -3904,6 +3905,19 @@
                                             <div>
                                                 <p id="text07">Ubicación</p>
                                             </div>
+                                            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                                                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                                                var setting = {"height":400,"width":800,"zoom":17,"queryString":"Doctor Jonas Salk 4219, Olivos, Provincia de Buenos Aires, Argentina","place_id":"ChIJp9k2n2WxvJURNgK-IjZaP8o","satellite":false,"centerCoord":[],"cid":"0xca3f5a3622be0236","lang":"es","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"828939"};
+                                                var d = document;
+                                                var s = d.createElement('script');
+                                                s.src = 'https://1map.com/js/script-for-user.js?embed_id=828939';
+                                                s.async = true;
+                                                s.onload = function (e) {
+                                                  window.OneMap.initMap(setting)
+                                                };
+                                                var to = d.getElementsByTagName('script')[0];
+                                                to.parentNode.insertBefore(s, to);
+                                              })();</script><a href="https://1map.com/es/map-embed">1 Map</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -3919,9 +3933,9 @@
                     <hr id="divider02">
                     <div id="image06" class="image"><span class="frame deferred"><img src="" alt="" /></span></div>
                     <p id="text13"><span>Es un documento creado para la protección y
-                            la prevención de la salud dental certificando la salud bucal del usuario.</span><br />
+                            la prevención de la salud dental certificando la salud bucal del usuario.</span>
                         <span>Entre estos podemos encontrar el certificado bucodental escolar y el certificado para
-                            piletas y natatorios.</span><br /><br />
+                            piletas y natatorios.</span>
                         El certificado bucodental escolar es uno de los documentos que te solicitan en el colegio para
                         el inicio escolar.<br />
                         Los establecimientos educativos exigen la presentación de un certificado bucodental. Este puede
